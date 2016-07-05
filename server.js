@@ -13,6 +13,7 @@ server.listen(PORT);
 console.log("Running on port: "+PORT)
 
 var weapons;
+var tiles;
 
 app.get('/', function(req, res){
   var options = {
@@ -54,6 +55,9 @@ app.get('/game', function(req, res){
 app.use(express.static(__dirname + '/'));
 jsonfile.readFile('public/json/weapons.json', function(err, obj) {
   weapons = obj
+})
+jsonfile.readFile('public/json/tiles.json', function(err, obj) {
+  tiles = obj
 })
 
 io.on('connection', function(socket){
