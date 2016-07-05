@@ -1,0 +1,57 @@
+{
+  "type": "object",
+  "title": "Weapon",
+  "description": "Create or Edit weapon object",
+  "properties": {
+    "path": {
+      "type": "string",
+      "title": "Path"
+    },
+    "name": {
+      "type": "string",
+      "title": "Name"
+    },
+    "type": {
+      "type": "string",
+      "title": "Type"
+    },
+    "damage": {
+      "type": "integer",
+      "title": "Damage"
+    },
+    "resources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "enum": [
+              "Wood",
+              "Metal",
+              "Stone",
+              "Gems",
+              "Leather",
+              "Gunpowder",
+              "Food"
+            ]
+          },
+          "amount": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "name",
+          "amount"
+        ]
+      }
+    }
+  },
+  "required": [
+    "path",
+    "name",
+    "type",
+    "damage",
+    "resources"
+  ]
+}

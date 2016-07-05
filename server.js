@@ -1,10 +1,12 @@
 var express = require('express')
 var app = express();
+
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
-var fs = require('fs');
-var path = require('path');
 var jsonfile = require('jsonfile');
+var path = require('path');
+var http = require('http');
+var fs = require('fs');
 
 var PORT = 80;
 server.listen(PORT);
@@ -36,15 +38,30 @@ app.get('/editor', function(req, res){
   res.sendFile('editor.html', options)
 });
 
+app.get('/game', function(req, res){
+  var options = {
+    root: __dirname + '/public/',
+    dotfiles: 'deny',
+    headers: {
+        'x-timestamp': Date.now(),
+        'x-sent': true
+    }
+  };
+  res.sendFile('game.html', options)
+});
+
+
 app.use(express.static(__dirname + '/'));
-jsonfile.readFile('public/weapons.json', function(err, obj) {
+jsonfile.readFile('public/json/weapons.json', function(err, obj) {
   weapons = obj
 })
 
 io.on('connection', function(socket){
-  socket.emit("weapons", weapons)
+  socket.on('getweapons', function(data){
+    socket.emit("weapons", weapons)
+  })
   socket.on('weaponsup', function(data){
     weapons = data
-    jsonfile.writeFile('public/weapons.json', weapons, {spaces: 4})
+    jsonfile.writeFile('public/json/weapons.json', weapons, {spaces: 4})
   });
 });

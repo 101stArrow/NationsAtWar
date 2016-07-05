@@ -1,4 +1,18 @@
-.tile {
-  width: 10%;
-  padding: 1%;
+.icon-div {
+    display: inline-block;
+    padding: 1%;
+    margin: 1%;
+    float: left;
+    width: 14%;
+    border-style: solid;
+    border-color: #000;
+    border-radius: 10%;
+}
+.icon-div p {
+  margin: auto;
+  text-align: center;
+}
+.icon-div img{
+  width: 100%;
+  border-radius: 10%;
 }
