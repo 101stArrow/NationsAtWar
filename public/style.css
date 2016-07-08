@@ -1,18 +1,46 @@
+#game table {
+    margin: auto;
+    white-space: nowrap;
+}
+#game table td {
+    width: auto;
+}
+#game table tr {
+    width: 100%;
+}
+#game table tbody {
+    display: table;
+    width: 100%;
+}
 .icon-div {
-    display: inline-block;
     padding: 1%;
-    margin: 1%;
-    float: left;
-    width: 14%;
     border-style: solid;
     border-color: #000;
     border-radius: 10%;
+    width: auto;
+    max-width: 75px;
+}
+.list {
+    float: left;
+    display: inline-block;
+    white-space: pre-wrap;
 }
 .icon-div p {
-  margin: auto;
-  text-align: center;
+    margin: auto;
+    text-align: center;
 }
-.icon-div img{
-  width: 100%;
-  border-radius: 10%;
+.icon-div img {
+    width: 50px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10%;
+}
+.status{
+  float: right;
+  display: inline-block;
+  height: 30px
+}
+.status p{
+  padding-right: 10%;
 }

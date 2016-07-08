@@ -1,0 +1,87 @@
+{
+    "type": "object",
+    "properties": {
+        "path": {
+            "type": "string",
+            "title": "Path"
+        },
+        "name": {
+            "type": "string",
+            "title": "Name"
+        },
+        "type": {
+            "type": "string",
+            "title": "Type",
+            "enum": [
+                "production",
+                "logistics",
+                "military",
+                "residence"
+            ]
+        },
+        "unlockage": {
+            "type": "string",
+            "title": "Unlock Age",
+            "enum": [
+                "stoneage",
+                "bronzeage",
+                "medival",
+                "renaissance",
+                "industrial",
+                "modern",
+                "future",
+                "none"
+            ]
+        },
+        "upgrade": {
+            "type": "object",
+            "properties": {
+                "from": {
+                    "type": "string"
+                },
+                "to": {
+                    "type": "string"
+                }
+            }
+        },
+        "buildcost": {
+            "title": "Build Cost",
+            "type": "object",
+            "properties": {
+                "wood": {
+                    "type": "integer"
+                },
+                "metal": {
+                    "type": "integer"
+                },
+                "stone": {
+                    "type": "integer"
+                },
+                "gems": {
+                    "type": "integer"
+                },
+                "gunpowder": {
+                    "type": "integer"
+                },
+                "food": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "wood",
+                "metal",
+                "stone",
+                "gems",
+                "gunpowder",
+                "food"
+            ]
+        }
+    },
+    "required": [
+        "path",
+        "name",
+        "type",
+        "unlockage",
+        "buildcost"
+    ]
+}

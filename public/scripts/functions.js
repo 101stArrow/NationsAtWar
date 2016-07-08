@@ -15,10 +15,6 @@ Array.prototype.sortOn = function(key) {
     });
 }
 
-function pushWeapons() {
-    socket.emit('weaponsup', weapons)
-}
-
 function getParameterByName(name, url) {
     if (!url) url = window.location.href;
     name = name.replace(/[\[\]]/g, "\\$&");
@@ -80,4 +76,43 @@ function rainbow(numOfSteps, step) {
     }
     var c = "#" + ("00" + (~~(r * 255)).toString(16)).slice(-2) + ("00" + (~~(g * 255)).toString(16)).slice(-2) + ("00" + (~~(b * 255)).toString(16)).slice(-2);
     return (c);
+}
+
+function subtract(a, b) {
+    var r = {};
+
+    // For each property of 'b'
+    // if it's different than the corresponding property of 'a'
+    // place it in 'r'
+    for (var key in b) {
+        if (typeof(b[key]) == 'object') {
+            if (!a[key]) a[key] = {};
+            r[key] = subtract(a[key], b[key]);
+        } else {
+            if (b[key] != a[key]) {
+                if (a[key] - b[key] == 0) {
+                    r[key] = 1
+                } else {
+                    r[key] = a[key] - b[key];
+                }
+            }
+        }
+    }
+
+    return r;
+}
+
+function canSubtract(a, b, min) {
+    var count = 0;
+    for (var key in b) {
+        if (a[key] - b[key] >= min) {
+        } else {
+            count++;
+        }
+    }
+    if (count > 0) {
+        return false;
+    } else {
+        return true
+    }
 }

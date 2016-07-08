@@ -3,10 +3,6 @@
     "name": "tiles",
     "type": "folder",
     "children": [{
-        "path": "public/tiles/Thumbs.db",
-        "name": "Thumbs.db",
-        "type": "file"
-    }, {
         "path": "public/tiles/ages.png",
         "name": "ages.png",
         "type": "file"
@@ -33,18 +29,6 @@
     }, {
         "path": "public/tiles/anvil-impact.png",
         "name": "anvil-impact.png",
-        "type": "file"
-    }, {
-        "path": "public/tiles/anvil.png",
-        "name": "anvil.png",
-        "type": "file"
-    }, {
-        "path": "public/tiles/aqueduct.png",
-        "name": "aqueduct.png",
-        "type": "file"
-    }, {
-        "path": "public/tiles/archery-target.png",
-        "name": "archery-target.png",
         "type": "file"
     }, {
         "path": "public/tiles/arena.png",
@@ -107,16 +91,8 @@
         "name": "backup.png",
         "type": "file"
     }, {
-        "path": "public/tiles/bank.png",
-        "name": "bank.png",
-        "type": "file"
-    }, {
         "path": "public/tiles/banknote.png",
         "name": "banknote.png",
-        "type": "file"
-    }, {
-        "path": "public/tiles/barn.png",
-        "name": "barn.png",
         "type": "file"
     }, {
         "path": "public/tiles/battered-axe.png",
@@ -149,10 +125,6 @@
     }, {
         "path": "public/tiles/biceps.png",
         "name": "biceps.png",
-        "type": "file"
-    }, {
-        "path": "public/tiles/block-house.png",
-        "name": "block-house.png",
         "type": "file"
     }, {
         "path": "public/tiles/body-swapping.png",
@@ -226,19 +198,11 @@
         "path": "public/tiles/cannon.png",
         "name": "cannon.png",
         "type": "file"
-    }, {
-        "path": "public/tiles/capitol.png",
-        "name": "capitol.png",
-        "type": "file"
-    }, {
+    },  {
         "path": "public/tiles/cash.png",
         "name": "cash.png",
         "type": "file"
-    }, {
-        "path": "public/tiles/castle.png",
-        "name": "castle.png",
-        "type": "file"
-    }, {
+    },  {
         "path": "public/tiles/cavalry.png",
         "name": "cavalry.png",
         "type": "file"
@@ -250,11 +214,7 @@
         "path": "public/tiles/chaingun.png",
         "name": "chaingun.png",
         "type": "file"
-    }, {
-        "path": "public/tiles/church.png",
-        "name": "church.png",
-        "type": "file"
-    }, {
+    },  {
         "path": "public/tiles/circular-saw.png",
         "name": "circular-saw.png",
         "type": "file"
@@ -321,10 +281,6 @@
     }, {
         "path": "public/tiles/demolish.png",
         "name": "demolish.png",
-        "type": "file"
-    }, {
-        "path": "public/tiles/dig-dug.png",
-        "name": "dig-dug.png",
         "type": "file"
     }, {
         "path": "public/tiles/disintegrate.png",
@@ -451,10 +407,6 @@
         "name": "fruiting.png",
         "type": "file"
     }, {
-        "path": "public/tiles/gate.png",
-        "name": "gate.png",
-        "type": "file"
-    }, {
         "path": "public/tiles/gavel.png",
         "name": "gavel.png",
         "type": "file"
@@ -466,11 +418,7 @@
         "path": "public/tiles/gold-bar.png",
         "name": "gold-bar.png",
         "type": "file"
-    }, {
-        "path": "public/tiles/gold-mine.png",
-        "name": "gold-mine.png",
-        "type": "file"
-    }, {
+    },  {
         "path": "public/tiles/gold-stack.png",
         "name": "gold-stack.png",
         "type": "file"
@@ -481,10 +429,6 @@
     }, {
         "path": "public/tiles/grapple.png",
         "name": "grapple.png",
-        "type": "file"
-    }, {
-        "path": "public/tiles/graveyard.png",
-        "name": "graveyard.png",
         "type": "file"
     }, {
         "path": "public/tiles/greaves.png",
@@ -565,10 +509,6 @@
     }, {
         "path": "public/tiles/hole-ladder.png",
         "name": "hole-ladder.png",
-        "type": "file"
-    }, {
-        "path": "public/tiles/house.png",
-        "name": "house.png",
         "type": "file"
     }, {
         "path": "public/tiles/i-beam.png",
@@ -826,11 +766,7 @@
         "path": "public/tiles/paint-roller.png",
         "name": "paint-roller.png",
         "type": "file"
-    }, {
-        "path": "public/tiles/palisade.png",
-        "name": "palisade.png",
-        "type": "file"
-    }, {
+    },  {
         "path": "public/tiles/palm.png",
         "name": "palm.png",
         "type": "file"
@@ -877,10 +813,6 @@
     }, {
         "path": "public/tiles/prayer.png",
         "name": "prayer.png",
-        "type": "file"
-    }, {
-        "path": "public/tiles/prisoner.png",
-        "name": "prisoner.png",
         "type": "file"
     }, {
         "path": "public/tiles/profit.png",
@@ -1219,10 +1151,6 @@
         "name": "think.png",
         "type": "file"
     }, {
-        "path": "public/tiles/tinker.png",
-        "name": "tinker.png",
-        "type": "file"
-    }, {
         "path": "public/tiles/tipi.png",
         "name": "tipi.png",
         "type": "file"
@@ -1238,11 +1166,7 @@
         "path": "public/tiles/tower-fall.png",
         "name": "tower-fall.png",
         "type": "file"
-    }, {
-        "path": "public/tiles/trade.png",
-        "name": "trade.png",
-        "type": "file"
-    }, {
+    },  {
         "path": "public/tiles/traffic-cone.png",
         "name": "traffic-cone.png",
         "type": "file"
@@ -1266,11 +1190,7 @@
         "path": "public/tiles/turret.png",
         "name": "turret.png",
         "type": "file"
-    }, {
-        "path": "public/tiles/viking-longhouse.png",
-        "name": "viking-longhouse.png",
-        "type": "file"
-    }, {
+    },  {
         "path": "public/tiles/village.png",
         "name": "village.png",
         "type": "file"
@@ -1289,10 +1209,6 @@
     }, {
         "path": "public/tiles/warp-pipe.png",
         "name": "warp-pipe.png",
-        "type": "file"
-    }, {
-        "path": "public/tiles/watchtower.png",
-        "name": "watchtower.png",
         "type": "file"
     }, {
         "path": "public/tiles/water-fountain.png",
@@ -1510,10 +1426,6 @@
     }, {
         "path": "public/tiles/weight.png",
         "name": "weight.png",
-        "type": "file"
-    }, {
-        "path": "public/tiles/well.png",
-        "name": "well.png",
         "type": "file"
     }, {
         "path": "public/tiles/wheelbarrow.png",
