@@ -51,14 +51,19 @@ function init() {
                 ui.draggable.fadeOut()
                 id = ui.draggable.attr('id');
                 cellnum = $(event.target).attr("id").substring(1)
+                place = playerbuildings[cellnum].building
                 tile = idmapping[id].building;
                 if(canSubtract(resources, tile.buildcost, 0)){
-                  if(tile.upgrade && tile.upgrade.from !== playerbuildings[cellnum].building.upgrade.to){
-                    
+                  if(tile.upgrade && place.upgrade && idmapping[id].index == place.upgrade.to){
+                    resources = subtract(resources, tile.buildcost)
+                    $('#img'+cellnum).attr("src", idmapping[id].building.path);
+                    playerbuildings[cellnum] = {"building": idmapping[id].building};
                   }
-                  resources = subtract(resources, tile.buildcost)
-                  $('#img'+cellnum).attr("src", idmapping[id].building.path);
-                  playerbuildings[cellnum] = {"building": idmapping[id].building};
+                  if(!tile.upgrade){
+                    resources = subtract(resources, tile.buildcost)
+                    $('#img'+cellnum).attr("src", idmapping[id].building.path);
+                    playerbuildings[cellnum] = {"building": idmapping[id].building};
+                  }
                   tick()
                 }
                 tick()

@@ -85,17 +85,10 @@ function subtract(a, b) {
     // if it's different than the corresponding property of 'a'
     // place it in 'r'
     for (var key in b) {
-        if (typeof(b[key]) == 'object') {
-            if (!a[key]) a[key] = {};
-            r[key] = subtract(a[key], b[key]);
+        if(a[key] != 0 && b[key] != 0){
+          r[key] = a[key] - b[key]
         } else {
-            if (b[key] != a[key]) {
-                if (a[key] - b[key] == 0) {
-                    r[key] = 1
-                } else {
-                    r[key] = a[key] - b[key];
-                }
-            }
+          r[key] = 0
         }
     }
 
